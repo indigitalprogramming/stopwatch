@@ -1,0 +1,61 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+@font-face {
+    font-family: 'clock';
+    src: url(fontes/alarm\ clock.ttf) format(truetype);
+}
+
+body {
+    background-image: radial-gradient( rgb(14, 13, 13), black);
+    height: 100vh;
+    position: relative;
+}
+
+.container{
+    color: white;
+    width: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.container > h1 {
+    color: orange;
+    font-size: 4.7em;
+    text-align: center;
+    font-family: clock, 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    color: white;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 80px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.start {
+    background-color: rgb(59, 196, 46);
+}
+
+.pause {
+    background-color: gray;
+}
+
+.stop {
+    background-color: rgb(226, 33, 33);
+}
